@@ -1,0 +1,29 @@
+//Normal state tangerine
+//hover state initial
+//@include respond-to($bp-xl-desktop){}
+.footer {
+    &__info button {
+        background-color: $tangerine;
+        border-radius: 5px;
+        font-family: $font-ubuntu;
+        border-top: 1px solid $white;
+        border-left: 1px solid $white;
+        border-bottom: 1px solid $gray;
+        border-right: 1px solid $gray;
+        display: block;
+        margin-left: 160px;
+    }
+
+    &__info button:hover {
+        background-color: $white;
+    }
+}
+
+@include respond-to($bp-xl-desktop){
+    .footer {
+        &__info button {
+            display: inline-block;
+            margin-left: 5px;
+        }
+    }
+}

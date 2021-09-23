@@ -1,0 +1,22 @@
+//@include respond-to($bp-xl-desktop){}
+.header {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@include respond-to($bp-lg-laptop){
+    .header {
+        width: 100%;
+        height: 500px;
+
+        img {
+            height: 500px;
+        }
+    }
+}

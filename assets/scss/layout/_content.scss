@@ -1,0 +1,148 @@
+//@include respond-to($bp-xl-desktop){}
+.content {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: inline-block;
+
+    &__left {
+        border: 1px solid $black;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    &__right {
+        border: 1px solid $black;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+.cursos {
+    border: 1px dashed $black;
+    margin: 10px;
+
+    h2 {
+        font-family: $font-ubuntu;
+        font-weight: $font-bold;
+        font-size: $xx-large;
+    }
+
+    p {
+        font-family: $font-ubuntu;
+        font-weight: $font-regular;
+        font-size: $medium;
+        text-align: justify;
+    }
+
+    h4 {
+        font-family: $font-ubuntu;
+        font-weight: $font-bold;
+        font-size: $large;
+    }
+
+    &__img img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__icons {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.mas-cursos {
+
+    &__img {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__img img {
+        width: auto;
+        height: 200px;
+        border: 1px solid $black;
+        border-radius: 50%;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &__icons {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__icons i {
+        padding: 0px 5px;
+    }
+
+    &__text p {
+        font-family: $font-ubuntu;
+        font-weight: $font-regular;
+        font-size: $medium;
+        text-align: justify;
+    }
+
+    &__title {
+        text-align: center;
+        background-color: $gray;
+        color: $white;
+        font-family: $font-poppins;
+        font-weight: $font-bold;
+        font-size: $medium;
+    }
+
+    &__animation {
+        text-align: center;
+        padding-bottom: 100px;
+        
+    }
+
+    &__object1 {
+        animation-name: horizontal;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    &__object2 {
+        animation-name: rotacion;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform-origin: 80% 80%
+    }
+}
+
+@include respond-to($bp-lg-laptop){
+    .content {
+        height: auto;
+        display: flex;
+    
+        &__left {
+            margin-right: 10px;
+        }
+
+        &__right {
+            margin-top: 0;
+            margin-left: 10px;
+        }
+    }
+
+    .mas-cursos {
+        &__animation {
+            text-align: center;
+            padding-bottom: 265px;
+        }
+    }
+}

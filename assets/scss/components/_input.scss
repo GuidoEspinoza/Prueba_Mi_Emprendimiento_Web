@@ -1,0 +1,28 @@
+//Normal state initial
+//Focus state tangerine
+//@include respond-to($bp-xl-desktop){}
+.footer {
+    &__info input {
+        border-radius: 5px;
+        display: block;
+        margin-left: 100px;
+        margin-bottom: 15px;
+        border-top: 1px solid $gray;
+        border-left: 1px solid $gray;
+        border-bottom: 1px solid $white;
+        border-right: 1px solid $white;
+    }
+
+    &__info input:focus {
+        background-color: $tangerine;
+    }
+}
+
+@include respond-to($bp-xl-desktop){
+    .footer{
+        &__info input {
+            display: inline-block;
+            margin-left: 0;
+        }
+    }
+}

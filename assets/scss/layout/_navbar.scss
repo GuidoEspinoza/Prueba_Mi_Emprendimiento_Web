@@ -1,0 +1,53 @@
+//Burger normal state initial
+//Burger hover state tangerine
+
+.navbar {
+    background-color: $black;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+
+    &__logo img{
+        width: 50px;
+        height: 50px;
+        margin-left: 40px;
+    }
+
+    &__text {
+        margin-right: 40px;
+    }
+
+    &__text a{
+        color: $white;
+        padding: 0 20px;
+        display: none;
+        font-family: $font-poppins;
+        font-weight: $font-bold;
+        font-size: $medium;
+
+    }
+
+    &__bars {
+        color: $white;
+        margin-right: 40px;
+    }
+
+    &__bars:hover {
+        color: $tangerine;
+    }
+}
+
+@include respond-to($bp-lg-laptop){
+    .navbar {
+
+        &__text a{
+            display: initial;
+        }
+
+        &__bars {
+            display: none;
+        }
+    }
+}
+
